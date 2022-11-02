@@ -1,0 +1,54 @@
+[
+    {
+        "label": "Types",
+        "children": [
+            {
+                "label": "Fire",
+                "subLabel": "Fire Type Pokemons",
+                "href": "/type/fire",
+                "color": "orange.300"
+            },
+            {
+                "label": "Aqua",
+                "subLabel": "Aqua Type Pokemons",
+                "href": "#",
+                "color": "blue.300"
+            },
+            {
+                "label": "Ghost",
+                "subLabel": "Ghost Type Pokemons",
+                "href": "#",
+                "color": "purple.300"
+            },
+            {
+                "label": "Fighter",
+                "subLabel": "Fighter Type Pokemons",
+                "href": "#",
+                "color": "gray.300"
+            }
+        ]
+    },
+    {
+        "label": "Gender",
+        "children": [
+            {
+                "label": "Female",
+                "subLabel": "Female gender Pokemons",
+                "href": "#",
+                "color": "gray.300"
+            },
+            {
+                "label": "Male",
+                "subLabel": "Male gender Pokemons",
+                "href": "#",
+                "color": "gray.300"
+            },
+            {
+                "label": "Genderless",
+                "subLabel": "Genderless gender Pokemons",
+                "href": "#",
+                "color": "gray.300"
+            }
+        ]
+    }
+]
