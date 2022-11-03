@@ -16,27 +16,27 @@ export const PokemonGrid = () => {
   }, []);
 
   return (
-    <Box className="bigFather" bg={'whiteAlpha.800'}>
+    <Box className="bigFather" bg={"whiteAlpha.800"}>
       <Box
         display={"block"}
-        textAlign={'center'}
+        textAlign={"center"}
         width={"80%"}
         margin={"auto"}
-        padding={40}
+        padding={["8", "16", "24", "40"]}
         pb={24}
       >
         <Text
           bgClip="text"
-          fontSize="8xl"
+          fontSize={["4xl", "5xl", "7xl", "8xl"]}
           fontWeight="extrabold"
           bgGradient="linear(to-l, yellow.400, yellow.600)"
           mb={8}
         >
           Welcome to PokeApp
         </Text>
-        <Text fontSize="3xl" fontWeight={'semibold'}>
-            Here is a list of some of the <br />
-            the pokemons you can view.
+        <Text fontSize="3xl" fontWeight={"semibold"}>
+          Here is a list of some of the <br />
+          the pokemons you can view.
         </Text>
       </Box>
       <Flex
