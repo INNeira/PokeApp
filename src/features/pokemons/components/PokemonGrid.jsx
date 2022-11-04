@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-import { pokemonService } from "../../shared/services/pokemonService";
+import { pokemonService } from "../../../shared/services/pokemonService";
 import { PokemonCardData } from "./PokemonCard/PokemonCardData";
 
 export const PokemonGrid = () => {

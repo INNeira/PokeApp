@@ -7,8 +7,8 @@ import {
   Image,
   Heading,
 } from "@chakra-ui/react";
-import { pokemonService } from "../../../shared/services/pokemonService";
-import { firstLetterToUpperCase } from "../../../shared/helpers/string-helper";
+import { pokemonService } from "../../../../shared/services/pokemonService";
+import { firstLetterToUpperCase } from "../../../../shared/helpers/string-helper";
 
 
 

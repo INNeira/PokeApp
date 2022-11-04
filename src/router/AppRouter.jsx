@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import {Login} from '../auth/pages/Login'
-import { PokemonRoutes } from "../pokemons/routes/PokemonRoutes";
+import {Login} from '../features/auth/pages/Login'
+import { PokemonRoutes } from "../features/pokemons/routes/PokemonRoutes";
 import {
   Box,
   Flex,

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { pokemonService } from "../../../shared/services/pokemonService";
+import { pokemonService } from "../../../../shared/services/pokemonService";
 
 export const TypesGrid = () => {
   const [types, setTypes] = useState([]);
