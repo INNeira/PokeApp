@@ -1,6 +1,7 @@
 [
     {
         "label": "Types",
+        "url" : "types",
         "children": [
             {
                 "label": "Fire",

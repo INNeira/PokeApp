@@ -116,19 +116,36 @@ export default function WithSubnavigation() {
 
 const DesktopNav = () => {
   const linkColor = useColorModeValue("gray.600", "gray.200");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
-  const popoverContentBgColor = useColorModeValue("white", "gray.800");
+  const linkHoverColor = useColorModeValue("gray.900", "white");
+  // const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
     <Stack direction={"row"} spacing={4}>
       {data.map((navItem) => (
         <Box key={navItem.label}>
-          <Popover trigger={"hover"} placement={"bottom-start"}>
+          <Popover>
+            <Link
+              as={RouterLink}
+              p={2}
+              to={navItem.url ?? "#"}
+              fontSize={"sm"}
+              fontWeight={500}
+              color={linkColor}
+              _hover={{
+                textDecoration: "none",
+                color: linkHoverColor,
+              }}
+            >
+              {navItem.label}
+            </Link>
+          </Popover>
+
+          {/* <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Link
                 as={RouterLink}
                 p={2}
-                to={navItem.href ?? "#"}
+                to={navItem.url ?? "#"}
                 fontSize={"sm"}
                 fontWeight={500}
                 color={linkColor}
@@ -139,9 +156,9 @@ const DesktopNav = () => {
               >
                 {navItem.label}
               </Link>
-            </PopoverTrigger>
+            </PopoverTrigger> */}
 
-            {navItem.children && (
+          {/* {navItem.children && (
               <PopoverContent
                 border={0}
                 boxShadow={"xl"}
@@ -156,8 +173,8 @@ const DesktopNav = () => {
                   ))}
                 </Stack>
               </PopoverContent>
-            )}
-          </Popover>
+            )} */}
+          {/* </Popover> */}
         </Box>
       ))}
     </Stack>
