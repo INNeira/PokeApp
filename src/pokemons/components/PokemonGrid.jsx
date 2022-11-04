@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import { pokemonService } from "../../shared/services/pokemonService";
-import { PokemonCard } from "./PokemonCard/PokemonCard";
+import { PokemonCardData } from "./PokemonCard/PokemonCardData";
 
 export const PokemonGrid = () => {
   const [pokemons, setPokemons] = useState([]);
@@ -14,7 +14,7 @@ export const PokemonGrid = () => {
   useEffect(() => {
     getAllPokemons();
   }, []);
-
+  
   return (
     <Box className="bigFather" bg={"whiteAlpha.800"}>
       <Box
@@ -48,7 +48,7 @@ export const PokemonGrid = () => {
         margin={"auto"}
       >
         {pokemons.map((pokemon) => (
-          <PokemonCard key={pokemon.name} {...pokemon} />
+          <PokemonCardData key={pokemon.name} {...pokemon} />
         ))}
       </Flex>
     </Box>
